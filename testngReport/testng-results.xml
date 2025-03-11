@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-03T15:10:11 IST" name="TestSuite" finished-at="2024-10-03T15:10:19 IST" duration-ms="8347">
+    <groups>
+    </groups>
+    <test started-at="2024-10-03T15:10:11 IST" name="Smoke Tests" finished-at="2024-10-03T15:10:19 IST" duration-ms="8347">
+      <class name="testClasses.Com.tests.LoginTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:testClasses.Com.tests.LoginTest@48aaecc3]" started-at="2024-10-03T15:10:11 IST" name="setUpSuite" finished-at="2024-10-03T15:10:11 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.Com.tests.LoginTest@48aaecc3]" started-at="2024-10-03T15:10:11 IST" name="setUp" finished-at="2024-10-03T15:10:19 IST" duration-ms="7553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:testClasses.Com.tests.LoginTest@48aaecc3]" started-at="2024-10-03T15:10:19 IST" name="loginTest" finished-at="2024-10-03T15:10:19 IST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.Com.tests.LoginTest@48aaecc3]" started-at="2024-10-03T15:10:19 IST" name="tearDown" finished-at="2024-10-03T15:10:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testClasses.Com.tests.LoginTest@48aaecc3]" started-at="2024-10-03T15:10:20 IST" name="tearDownSuite" finished-at="2024-10-03T15:10:20 IST" duration-ms="363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- testClasses.Com.tests.LoginTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- TestSuite -->
+</testng-results>

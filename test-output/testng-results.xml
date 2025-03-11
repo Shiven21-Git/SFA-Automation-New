@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-08T12:40:31 IST" name="TestSuite" finished-at="2024-12-08T12:40:34 IST" duration-ms="2990">
+    <groups>
+    </groups>
+    <test started-at="2024-12-08T12:40:31 IST" name="Smoke Tests" finished-at="2024-12-08T12:40:34 IST" duration-ms="2990">
+      <class name="testClasses.Com.tests.SauceLabLoginTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:testClasses.Com.tests.SauceLabLoginTest@4b14c583]" started-at="2024-12-08T12:40:31 IST" name="setUpSuite" finished-at="2024-12-08T12:40:31 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.Com.tests.SauceLabLoginTest@4b14c583]" started-at="2024-12-08T12:40:31 IST" name="setUp" finished-at="2024-12-08T12:40:33 IST" duration-ms="2505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:testClasses.Com.tests.SauceLabLoginTest@4b14c583]" started-at="2024-12-08T12:40:33 IST" name="loginTest" finished-at="2024-12-08T12:40:34 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testClasses.Com.tests.SauceLabLoginTest@4b14c583]" started-at="2024-12-08T12:40:34 IST" name="tearDown" finished-at="2024-12-08T12:40:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:testClasses.Com.tests.SauceLabLoginTest@4b14c583]" started-at="2024-12-08T12:40:34 IST" name="tearDownSuite" finished-at="2024-12-08T12:40:34 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- testClasses.Com.tests.SauceLabLoginTest -->
+      <class name="testClasses.Com.tests.SauceLabAddProductTest">
+        <test-method signature="hello()[pri:0, instance:testClasses.Com.tests.SauceLabAddProductTest@4386f16]" started-at="2024-12-08T12:40:31 IST" name="hello" finished-at="2024-12-08T12:40:31 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hello -->
+      </class> <!-- testClasses.Com.tests.SauceLabAddProductTest -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- TestSuite -->
+</testng-results>

@@ -1,0 +1,38 @@
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+<!--<suite thread-count="3" name="TestSuite" parallel="classes">-->
+<!--    <test  name="Test">-->
+<!--        <classes>-->
+<!--            <class name="testClasses.Com.tests.LoginTest" />-->
+<!--&lt;!&ndash;            <class name="com.tests.testClasses.Amazon" />&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="com.tests.testClasses.FlipKart" />&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" thread-count="3" parallel="classes">
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+        <listener class-name="listeners.Com.tests.TestListener"/>
+    </listeners>
+
+    <test name="Smoke Tests">
+        <classes>
+            <class name="testClasses.Com.tests.SauceLabLoginTest" />
+            <class name="testClasses.Com.tests.SauceLabAddProductTest" />
+<!--            <class name="com.tests.testClasses.Amazon" />-->
+<!--            <class name="com.tests.testClasses.FlipKart" />-->
+        </classes>
+    </test>
+
+<!--    <test name="Regression Tests">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="com.tests.testClasses.AnotherTestClass" />&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
