@@ -18,7 +18,7 @@ public class PageGenerator {
         logger.info("WebDriver initialized in PageGenerator: {}", this.driver);
     }
 
-    public <TPage> TPage getPageInstance(Class<TPage> pageClass) {
+   public <TPage> TPage getPageInstance(Class<TPage> pageClass) {
         return PageFactory.initElements(driver, pageClass);
     }
 }

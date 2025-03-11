@@ -14,7 +14,7 @@ public class SfaLogin extends Utility {
     @FindBy(id ="passwordInput")
     private WebElement passWord;
 
-    @FindBy(how = How.XPATH, using = "//p[text()=\'SIGN IN\']")
+    @FindBy(how = How.XPATH, using = "//p[text()='SIGN IN']")
     private WebElement signInButton;
 
     @FindBy(how = How.XPATH, using = "//button[text() = 'My Permissions']")

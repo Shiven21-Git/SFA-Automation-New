@@ -13,7 +13,7 @@ public class SfaCreateMember extends Utility {
     @FindBy(how = How.XPATH,using = "//a[text()='Members']")
     WebElement clickOnMembers;
 
-    @FindBy(how = How.XPATH,using = "//*[@id=\"mytask-layout\"]/div[2]/div[2]/div[1]/div/div/div/div/button[3]")
+    @FindBy(how = How.XPATH,using = "//button[text()='Add Employee']")
     WebElement clickAddEmployeeButton;
 
     @FindBy(id = "exampleFormControlInput877")
@@ -37,7 +37,7 @@ public class SfaCreateMember extends Utility {
     @FindBy(xpath = "(//select[@class=\"form-select\"])/option[4]")
     WebElement selectSalesMen;
 
-    @FindBy(xpath = "//div[@id=\"react-select-4-placeholder\"]")
+    @FindBy(xpath = "//div[text()='Select Permission']")
     WebElement clickSelectPermission;
 
     @FindBy(id = "react-select-4-live-region")
@@ -49,10 +49,10 @@ public class SfaCreateMember extends Utility {
     @FindBy(xpath = "(//div[@id=\"assignMember\"or @class=\"dropdown-item\"])[2]")
     WebElement selectVinaySingh;
 
-    @FindBy(id = "exampleFormControlInput478")
+    @FindBy(xpath = "(//select[@id=\"exampleFormControlInput478\"])[1]")
     WebElement selectRegion;
 
-    @FindBy(xpath = "(//select//option[@value=\"1\"])[2]")
+    @FindBy(xpath = "(//select[@id=\"exampleFormControlInput478\"])/option[@value='1']")
     WebElement selectNorth;
 
     @FindBy(id = "exampleFormControlInput578")
@@ -89,29 +89,32 @@ public class SfaCreateMember extends Utility {
     public void createMemberForm() {
 
 
-        clickOnEmployeeButton.click();
-        clickOnMembers.click();
-        clickAddEmployeeButton.click();
+       // clickOnEmployeeButton.click();
+        click(clickOnEmployeeButton);
+        click(clickOnMembers);
+        click(clickAddEmployeeButton);
         writeText(clickEnterFirstName, "Nitesh");
         writeText(ClickEnterLastName, "Bharti");
         writeText(clickDob, "2001-12-24");
-        CharSequence Filepath = "/Users/sharadmishra/Downloads/googlechrome.dmg";
+
+        CharSequence Filepath = "C:\\Users\\shive\\Downloads\\pexels-photo-927022 (1).jpeg";
         clickSelectImage.sendKeys(Filepath);
         writeText(clickSelectJoiningData, "2024-12-24");
-        clickSelectDesignation.click();
-        selectSalesMen.click();
-        clickSelectPermission.click();
-        clickSelectCreateManager.click();
-        clickSelectRepotingManager.click();
-        selectVinaySingh.click();
-        selectRegion.click();
-        selectNorth.click();
-        selectState.click();
-        slectUttarPradesh.click();
-        selectCity.click();
-        selectKanpur.click();
-        selectDivision.click();
-        selectFmcg.click();
+        click(clickSelectDesignation);
+        click(selectSalesMen);
+        click(clickSelectPermission);
+        click(clickSelectCreateManager);
+        click(clickSelectRepotingManager);
+        click(selectVinaySingh);
+//        selectDropdownByValue(selectRegion,"NORTH");
+        click(selectRegion);
+        click(selectNorth);
+        click(selectState);
+        click(slectUttarPradesh);
+        click(selectCity);
+        click(selectKanpur);
+        click(selectDivision);
+        click(selectFmcg);
         writeText(clickEnterMobile, "8736576574");
         writeText(enterPassword, "Test@123");
         writeText(enterEmail, "nitesh@gmail.com");
