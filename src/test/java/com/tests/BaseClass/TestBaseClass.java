@@ -43,7 +43,6 @@ public class TestBaseClass extends Utility {
     @BeforeMethod
     public void setUp() {
         try {
-            extent.createTest("Driver Setup and Login Test");
             test = extent.createTest("Driver Setup and Login Test");
             DriverSupplier.getInstance().openBrowser(browser, url);
             pageGenerator = new PageGenerator();
@@ -64,7 +63,7 @@ public class TestBaseClass extends Utility {
     public void tearDown() {
         try {
             if (DriverSupplier.getInstance().getDriver() != null) {
-                DriverSupplier.getInstance().quitDriver();
+    //            DriverSupplier.getInstance().quitDriver();
                 if (test != null) {
                     test.pass("Browser closed.");
                 }
