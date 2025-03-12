@@ -63,7 +63,7 @@ public class TestBaseClass extends Utility {
     public void tearDown() {
         try {
             if (DriverSupplier.getInstance().getDriver() != null) {
-    //            DriverSupplier.getInstance().quitDriver();
+//                DriverSupplier.getInstance().quitDriver();
                 if (test != null) {
                     test.pass("Browser closed.");
                 }
