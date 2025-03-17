@@ -1,5 +1,6 @@
 package Com.testng.Pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,41 +38,42 @@ public class SfaCreateMember extends Utility {
     @FindBy(xpath = "(//select[@class=\"form-select\"])/option[4]")
     WebElement selectSalesMen;
 
-    @FindBy(xpath = "//div[text()='Select Permission']")
+
+    @FindBy(xpath = "(//div[contains(@class,'indicatorContainer')])[1]")
     WebElement clickSelectPermission;
+    @FindBy(xpath = "//div[text()='Create Manager']")
+    WebElement getClickSelectPermission1;
+//    @FindBy(xpath = "//div[text()='Edit Manager']")
+//    WebElement getClickSelectPermission2;
+//    @FindBy(xpath = "//div[text()='View Manager']")
+//    WebElement getClickSelectPermission3;
 
-    @FindBy(id = "react-select-4-live-region")
-    WebElement clickSelectCreateManager;
 
-    @FindBy(id = "assignMember")
-    WebElement clickSelectRepotingManager;
-
-    @FindBy(xpath = "(//div[@id=\"assignMember\"or @class=\"dropdown-item\"])[2]")
-    WebElement selectVinaySingh;
+//    @FindBy(id = "assignMember")
+//    WebElement clickSelectRepotingManager;
+//
+//    @FindBy(xpath = "(//div[@id=\"assignMember\"or @class=\"dropdown-item\"])[2]")
+//    WebElement selectVinaySingh;
 
     @FindBy(xpath = "(//select[@id=\"exampleFormControlInput478\"])[1]")
     WebElement selectRegion;
 
-    @FindBy(xpath = "(//select[@id=\"exampleFormControlInput478\"])/option[@value='1']")
-    WebElement selectNorth;
-
-    @FindBy(id = "exampleFormControlInput578")
+    @FindBy(xpath = "(//p[text()='Select State'])[2]")
     WebElement selectState;
 
-    @FindBy(xpath = "(//select//option[@value=\"1\"])[3]")
-    WebElement slectUttarPradesh;
+    @FindBy(xpath = "//div[text()='Uttar Pradesh']")
+    WebElement slectStateFromDropdown;
 
-    @FindBy(id = "assignClient")
+    @FindBy(xpath = "(//p[text()='Select City'])[2]")
     WebElement selectCity;
 
-    @FindBy(xpath = "//div[@id=\"assignClient\"]//following::div[2]")
-    WebElement selectKanpur;
+    @FindBy(xpath = "//div[text()='Kanpur']")
+    WebElement selectCityFromMenu;
 
-    @FindBy(xpath = "//div[@id=\"react-select-7-placeholder\"]")
+    @FindBy(css = "div.row.g-3.mb-3:nth-of-type(1) div.row.g-3.mb-3 div.css-1xc3v61-indicatorContainer")
     WebElement selectDivision;
-
-    @FindBy(xpath = "(//input[@id=\"exampleFormControlInput684\"])[2]")
-    WebElement selectFmcg;
+    @FindBy(xpath = "//div[text()='Finance and accounting']")
+    WebElement getClickSelectDivision1;
 
     @FindBy(id = "exampleFormControlInput177")
     WebElement clickEnterMobile;
@@ -84,6 +86,9 @@ public class SfaCreateMember extends Utility {
 
     @FindBy(id = "exampleFormControlInput879")
     WebElement enterEmployeeID;
+
+    @FindBy(xpath = "//button[text()='Add']")
+    WebElement addButton;
 
 
     public void createMemberForm() {
@@ -99,26 +104,29 @@ public class SfaCreateMember extends Utility {
 
         CharSequence Filepath = "C:\\Users\\shive\\Downloads\\pexels-photo-927022 (1).jpeg";
         clickSelectImage.sendKeys(Filepath);
-        writeText(clickSelectJoiningData, "2024-12-24");
-        click(clickSelectDesignation);
+        writeText(clickSelectJoiningData, "24-12-2024");
+       // click(clickSelectDesignation);
+        selectDropdownByIndex(clickSelectDesignation,2);
         click(selectSalesMen);
         click(clickSelectPermission);
-        click(clickSelectCreateManager);
-        click(clickSelectRepotingManager);
-        click(selectVinaySingh);
-//        selectDropdownByValue(selectRegion,"NORTH");
-        click(selectRegion);
-        click(selectNorth);
+        click(getClickSelectPermission1);
+//      click(getClickSelectPermission2);
+//      click(getClickSelectPermission3);
+//      click(selectVinaySingh);
+//      click(selectRegion);
+        selectDropdownByIndex(selectRegion,1);
         click(selectState);
-        click(slectUttarPradesh);
+        click(slectStateFromDropdown);
         click(selectCity);
-        click(selectKanpur);
+        click(selectCityFromMenu);
         click(selectDivision);
-        click(selectFmcg);
-        writeText(clickEnterMobile, "8736576574");
+        click(getClickSelectDivision1);
+  //    click(selectFmcg);
+        writeText(clickEnterMobile, "8736576578");
         writeText(enterPassword, "Test@123");
-        writeText(enterEmail, "nitesh@gmail.com");
-        writeText(enterEmployeeID, "EMP_879");
+        writeText(enterEmail, "nitesh_kumar@gmail.com");
+        writeText(enterEmployeeID, "EMP_872");
+        addButton.click();
 
     }
 }
