@@ -15,8 +15,4 @@ public class TestCreateProducts extends TestBaseClass {
         createProduct.createProductForm();
 
     }
-
-
-
-
 }

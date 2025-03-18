@@ -6,12 +6,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class CreateProduct extends Utility{
 
-//    @FindBy(linkText="Inventory Management")
-//    WebElement clickInventoryManagement;
-
-//    @FindBy(xpath = "//div[@class=\"MuiTabs-flexContainer css-7sga7m\"]/a/button)[1]")
-//    WebElement clickOnProducts;
-
     @FindBy(xpath = "//span[text()='Master']")
     WebElement clickMainMaster;
     @FindBy(xpath = "//a[text()='Product Master']")
