@@ -84,8 +84,8 @@ public class SfaCreateMember extends Utility {
     @FindBy(id = "exampleFormControlInput777")
     WebElement enterEmail;
 
-    @FindBy(id = "exampleFormControlInput879")
-    WebElement enterEmployeeID;
+//    @FindBy(id = "exampleFormControlInput879")
+//    WebElement enterEmployeeID;
 
     @FindBy(xpath = "//button[text()='Add']")
     WebElement addButton;
@@ -100,7 +100,7 @@ public class SfaCreateMember extends Utility {
         click(clickAddEmployeeButton);
         writeText(clickEnterFirstName, "Nitesh");
         writeText(ClickEnterLastName, "Bharti");
-        writeText(clickDob, "2001-12-24");
+        writeText(clickDob, "24-12-2024");
 
         CharSequence Filepath = "C:\\Users\\shive\\Downloads\\pexels-photo-927022 (1).jpeg";
         clickSelectImage.sendKeys(Filepath);
@@ -125,7 +125,7 @@ public class SfaCreateMember extends Utility {
         writeText(clickEnterMobile, "8736576578");
         writeText(enterPassword, "Test@123");
         writeText(enterEmail, "nitesh_kumar@gmail.com");
-        writeText(enterEmployeeID, "EMP_872");
+     //   writeText(enterEmployeeID, "EMP_872");
         addButton.click();
 
     }
