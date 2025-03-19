@@ -17,13 +17,15 @@ public class SfaCreateExpense extends Utility{
     WebElement enterSpentOn;
     @FindBy(how = How.XPATH,using = "//input[@id='abc']")
     WebElement enterDate;
-    @FindBy(how = How.XPATH,using = "deptwo")
+    @FindBy(how = How.XPATH,using = "//input[@id='deptwo']")
     WebElement enterAmount;
     @FindBy(how = How.XPATH,using = "//select[@class='form-select']")
     WebElement selectExpenseType;
 
     @FindBy(how = How.XPATH,using = "//input[@id='image']")
     WebElement selectIamgeFile;
+    @FindBy(how = How.XPATH,using = "//button[text()='Add']")
+    WebElement clickOnAddButton;
 
 
     public void createExpenseForm(){
@@ -35,9 +37,9 @@ public class SfaCreateExpense extends Utility{
         writeText(enterDate,"20-03-2025");
         writeText(enterAmount,"1000");
         selectDropdownByValue(selectExpenseType,"0");
-        CharSequence Filepath = "C:\\Users\\shive\\Downloads\\pexels-photo-927022 (1).jpeg";
-       selectIamgeFile.sendKeys(Filepath);
-
+        CharSequence Filepath = "C:\\Users\\shive\\Downloads\\2(1).jpg";
+        selectIamgeFile.sendKeys(Filepath);
+        click(clickOnAddButton);
     }
 
 }
