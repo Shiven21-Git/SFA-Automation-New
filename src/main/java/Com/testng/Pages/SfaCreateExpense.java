@@ -37,7 +37,7 @@ public class SfaCreateExpense extends Utility{
         writeText(enterDate,"20-03-2025");
         writeText(enterAmount,"1000");
         selectDropdownByValue(selectExpenseType,"0");
-        CharSequence Filepath = "C:\\Users\\shive\\Downloads\\2(1).jpg";
+        CharSequence Filepath = "C:\\Users\\shive\\Downloads\\2 (1).jpg";
         selectIamgeFile.sendKeys(Filepath);
         click(clickOnAddButton);
     }
